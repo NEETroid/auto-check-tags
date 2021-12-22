@@ -1,0 +1,22 @@
+name: checker for kernel tag
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: '0 * * * *'
+
+env:
+  BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+
+jobs:
+  Runner:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Do Check Nows
+      run: |
+        bash checker.sh
