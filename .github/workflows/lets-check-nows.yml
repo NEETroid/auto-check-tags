@@ -2,7 +2,7 @@ name: checker for kernel tag
 
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '0 * * * *'
 
 env:
   BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
