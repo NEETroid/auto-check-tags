@@ -19,10 +19,10 @@ SendInfo(){
         link="https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
     fi
     curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
-    -d chat_id="-1001400256602" \
+    -d chat_id="@NeutrinoCh" \
     -d "disable_web_page_preview=true" \
     -d "parse_mode=html" \
-    -d text="Kernel Tags ${1} Ready on $link, when upstream?"
+    -d text="Kernel Tags ${1} Available on $link"
 }
 Total="0"
 while [[ "$Total" != "58" ]];do
