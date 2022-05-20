@@ -25,7 +25,7 @@ SendInfo(){
     -d text="Kernel Tags ${1} Available on $link"
 }
 Total="0"
-while [[ "$Total" != "58" ]];do
+while [[ "$Total" != "48" ]];do
     if [[ -z "${BOT_TOKEN}" ]];then
         echo "bot token null"
         exit
